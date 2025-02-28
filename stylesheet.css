@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse-Bold.otf');
+}
+
+* {
+    font-family: Norse, sans-serif;
+}
+
+.left-side{
+    color: whitesmoke;
+    background-image: url('./images/leaf.jpg');
+    background-size: contain;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 80vh;
+}
+
+.logo{
+    height: 20%;
+}
+
+.logo img {
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+}
+
+.credentials-background{
+    margin-top: 1000px;
+}
