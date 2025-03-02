@@ -17,41 +17,52 @@
         </div>
 
         <div class="right-side">
-            <p>
-                This is not a real online serive! You know you need something t=like this in your life to hlp your deepeest dreams. Sing up not to et started.
-            </p>
-            <br>
-            <p>
-                You know you want to.
-            </p>
-        </div>
-
-        <form action="https://httpbin.org/" method="post">
-            <label for="first_name">First Name</label>
-            <input type="text" id="first_name" name="first_name" pattern="[A-Z][a-z]">
-            
-            <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="last_name" pattern="[A-Z][a-z]">
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-            
-            <label for="tel">Phone number</label>
-            <input type="tel" id="tel" name="tel">
-            
-            <label for="pwd">Password</label>
-            <input type="password" id="pwd" name="pwd">
-
-            <label for="cpwd">Confirm Password</label>
-            <input type="password" id="cpwd" name="cpwd">
-            
-            <div class="form-footer">
-                <button type="submit">Create Account</button>
-                <div class="log-in-footer">
-                    <span>Already have an account? <a>Log In</a></span>
-                </div>
+            <div class="over-head">
+                <p>
+                    This is not a real online serive! You know you need something like this in your life to help you realize your deepeest dreams. Sign up <i>now</i> to get started.
+                </p>
+                <br>
+                <p>
+                    You <i>know</i> you want to.
+                </p>
             </div>
-        </form>
+
+
+            <form action="https://httpbin.org/" method="POST">
+                <div class="form-conttent">
+                    <div>Let's do this!</div>
+                    <div class="form-section">
+                        <section>
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" pattern="[A-Z][a-z]">
+                            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+    
+                                            
+                            <label for="pwd">Password</label>
+                            <input type="password" id="pwd" name="pwd" required>
+                        </section>
+                        <section>
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" pattern="[A-Z][a-z]">
+                            
+                            <label for="tel">Phone number</label>
+                            <input type="tel" id="tel" name="tel">
+                
+                            <label for="cpwd">Confirm Password</label>
+                            <input type="password" id="cpwd" name="cpwd" required>
+                        </section>
+                    </div>
+                </div>
+                
+                <div class="form-footer">
+                    <button type="submit">Create Account</button>
+                    <div>Already have an account? <a href="#">Log In</a></div>
+                </div>
+            </form>
+
+        </div>
     </div>
 </body>
 </html>

@@ -3,30 +3,174 @@
     src: url('./fonts/Norse-Bold.otf');
 }
 
+:root{
+    --color_left_side: whitesmoke;
+    --color_background_right_side: rgb(245,245,245);
+    --color_form_background: rgb(255,255,255);
+    --pading-between-left-right-side:  2rem;
+    --pading-between-right-margin-side:  8rem;
+    --text-size: 1.8rem;
+    --label-size: 1.2rem;
+}
+
 * {
-    font-family: Norse, sans-serif;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.left-side{
-    color: whitesmoke;
-    background-image: url('./images/leaf.jpg');
-    background-size: contain;
-    object-fit: fill;
-    background-repeat: no-repeat;
+.container{
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
-.logo{
+.left-side {
+    width: 50%;
+    height: 100%;
+    color: var(--color_left_side);
+    background: center no-repeat url('./images/leaf.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side > .logo {
+    margin-top: 10rem;
     height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(10, 10, 10, 0.6);
 }
 
-.logo img {
-    object-fit: cover;
-    height: 100px;
-    width: 100px;
+.left-side > .logo > h1{
+    font-family: Norse, sans-serif;
+    font-size: 4.5em;
+}
+
+.left-side > .logo > img {
+    padding: 0.8em;
+    object-fit: contain;
+}
+
+.left-side > .credentials-background {
+    margin-top: auto;
+    margin-bottom: 0.4em;
 }
 
 .credentials-background{
-    margin-top: 1000px;
+    font-size: 0.8rem;
+}
+
+.credentials-background a:link{
+    color: var(--color_left_side);
+    text-decoration: underline;
+}
+
+.credentials-background a:visited{
+    color: var(--color_left_side);
+    text-decoration: underline;
+}
+
+.credentials-background a:hover{
+    color: var(--color_left_side);
+    text-decoration: underline;
+}
+
+.credentials-background a:active{
+    color: var(--color_left_side);
+    text-decoration: underline;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    background-color: var(--color_background_right_side);
+}
+
+.right-side > .over-head{
+    padding-left: var(--pading-between-left-right-side);
+    padding-right: var(--pading-between-right-margin-side);
+    margin-bottom: 1.5rem;
+    font-size: var(--text-size);
+}
+
+.form-conttent{
+    padding: 1rem var(--pading-between-right-margin-side) 0.8rem var(--pading-between-left-right-side);
+    background-color: var(--color_form_background);
+    box-shadow: 0 5px 8px lightgrey;
+}
+
+.form-conttent>div{
+    font-size: var(--text-size);
+    padding-bottom: 2rem;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-section > section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+input{
+    margin-bottom: 0.8rem;
+    padding: 0.6rem;
+    border:0.2rem solid #E5E7EB;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:focus{
+    border-color: lightskyblue;
+    box-shadow: 0 3px 5px 2px lightgrey;
+}
+
+.form-footer{
+    padding-left: var(--pading-between-left-right-side);
+}
+
+.form-footer>button{
+    margin: 1rem;
+    font-size: 1.2rem;
+    padding: 0.3em 2rem;
+    margin-left: 0;
+    background-color: forestgreen;
+    border: forestgreen;
+    color: var(--color_left_side);
+    border-radius: 0.4em;
+}
+
+.form-footer>div>a:link{
+    color: forestgreen;
+    text-decoration: none;
+}
+
+.form-footer>div>a:visited{
+    color: forestgreen;
+    text-decoration: none;
+}
+
+.form-footer>div>a:hover{
+    color: forestgreen;
+    text-decoration: none;
+}
+
+.form-footer>div>a:active{
+    color: forestgreen;
+    text-decoration: none;
 }
